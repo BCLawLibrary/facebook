@@ -1,0 +1,13 @@
+<link rel="stylesheet" type="text/css" href="https://www.bc.edu/content/dam/bc1/schools/law/js/library/facebook/facebook.css">
+<script type="text/javascript" src="https://www.bc.edu/content/dam/bc1/schools/law/js/library/facebook/anchorme.min.js"></script>
+<script type="text/javascript" src="https://www.bc.edu/content/dam/bc1/schools/law/js/library/facebook/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="https://www.bc.edu/content/dam/bc1/schools/law/js/library/facebook/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="https://www.bc.edu/content/dam/bc1/schools/law/js/library/facebook/facebook.js"></script>
+
+<div id="fb-feed-container">
+<h2>Law Library News</h2>
+<div id="fb-text"></div>
+<div id="fb-container">
+<div id="facebook" class="grid"></div>
+</div>
+</div>
