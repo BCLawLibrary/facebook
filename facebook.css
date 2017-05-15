@@ -163,7 +163,7 @@ body .int-wrap .facebook-image p {
 	}
 }
 @media (max-width: 1500px) and (min-width:1201px) {
-.grid-item:nth-child(n+11) {
+.grid-item:nth-child(n+8) {
 		display:none;
 	}
 .grid-sizer, .grid-item {
@@ -186,7 +186,7 @@ body .int-wrap .facebook-image p {
 		margin-left:40%;
 
 	}
-	.grid-item:nth-child(n+8) {
+	.grid-item:nth-child(n+6) {
 		display:none;
 	}
 
