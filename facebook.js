@@ -30,7 +30,7 @@
 	function getPost (postID, callback) {
 	FB.api(
 					postID,
-					{access_token: '1744135619181438|OItwAPAv2d8-p32E-sSqHXQR4vE',//add your access token
+					{access_token: '',//add your access token
 					fields: 'full_picture,picture,message,story,description,name,link,permalink_url,created_time'
 					},
 					function(postResponse) {
@@ -199,7 +199,7 @@ function writeFeed(callback) {
 		$('#fb-text').empty().html(currentText);
     console.log(currentText);
 		if (currentText.length < 300) {
-			$('#fb-text .postFull').css({'font-size':'32px', 'line-height':'48px'})
+			$('#fb-text .postFull').css({'font-size':'32px', 'line-height':'40px'})
 		}
 		else {
 			$('#fb-text .postFull').css({'font-size':'16px', 'line-height':'26px'})
