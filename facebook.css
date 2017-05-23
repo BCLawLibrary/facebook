@@ -117,12 +117,13 @@ body .int-wrap p.postDate, body .int-wrap p.postFull {
 
 }
 .facebook-image p {
-	padding:20px;
+		color:#fff;
+}
+
+.facebook-image .postLink {
+	padding:45px;
 	background-color:#DE9600;
 	color:#fff;
-}
-.fb-current .facebook-image p {
-	padding:25px;
 }
 
 
@@ -131,13 +132,13 @@ body .int-wrap p.postDate, body .int-wrap p.postFull {
 	text-align: center;
     font-size: 36px;
 	line-height:36px;
-	padding:40px;
+	padding:45px;
 	background-color:#501315;
 
 }
 
-.fb-current .facebook-image .postHead {
-	padding:45px;
+.fb-current .facebook-image .postHead, .fb-current .facebook-image .postLink {
+	padding:50px;
 }
 
 body .int-wrap .facebook-image p {
@@ -156,7 +157,15 @@ body .int-wrap .facebook-image p {
 	display:block;
 
 }
+.attachment {
+	background-color: #DFDDCF;
+}
 
+.attachment img { /*Class for images from posts with multiple images*/
+	width: auto;
+	margin: auto;
+	padding: 10px 0px;
+}
 
 
 
@@ -192,8 +201,15 @@ body .int-wrap .facebook-image p {
 	.grid-item:nth-child(n+6) {
 		display:none;
 	}
+	.attachment img { /*Class for images from posts with multiple images*/
+		padding: 0px 0px;
+	}
 
 }
+
+
+
+
 
 @media (max-width: 700px) {
 	#fb-feed-container {
@@ -218,7 +234,9 @@ body .int-wrap .facebook-image p {
 		display:none;
 	}
 
-
+	.attachment img { /*Class for images from posts with multiple images*/
+		padding: 20px 0px;
+	}
 
 	#fb-container {
 		margin-left:0px;
