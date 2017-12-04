@@ -161,10 +161,10 @@ body .int-wrap .facebook-image p {
 	background-color: #DFDDCF;
 }
 
-.attachment img { /*Class for images from posts with multiple images*/
-	width: auto;
+.attachment img { /*Class for images from posts with multiple images - this was addded at some point but now it is causing issues - keep an eye on this?*/
+	/*width: auto; 
 	margin: auto;
-	padding: 10px 0px;
+	padding: 10px 0px;*/
 }
 
 
@@ -201,8 +201,8 @@ body .int-wrap .facebook-image p {
 	.grid-item:nth-child(n+6) {
 		display:none;
 	}
-	.attachment img { /*Class for images from posts with multiple images*/
-		padding: 0px 0px;
+	.attachment img { /*Class for images from posts with multiple images
+		padding: 0px 0px;*/
 	}
 
 }
@@ -234,8 +234,8 @@ body .int-wrap .facebook-image p {
 		display:none;
 	}
 
-	.attachment img { /*Class for images from posts with multiple images*/
-		padding: 20px 0px;
+	.attachment img { /*Class for images from posts with multiple images
+		padding: 20px 0px;*/
 	}
 
 	#fb-container {
