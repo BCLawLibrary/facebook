@@ -71,6 +71,7 @@ getFeed(function (feedResponse) {
    var k = 1
    var l = 1
 
+   console.log(feedResponse);
    $.each(feedResponse.data, function(key, value) {
      l++
      postID = $(this.id).selector;
@@ -87,23 +88,22 @@ getFeed(function (feedResponse) {
        .appendTo('#facebook');
 
      getPost(postID, function(postResponse){
-	if (postResponse.attachments) {
+       console.log(postResponse);
+
        if (postResponse.attachments.data[0]["subattachments"]) {
          postImage=postResponse.attachments.data[0].subattachments.data[0].media.image.src;
          imageCheck="attachment"
       }
-	  
       else {
         postImage = postResponse.full_picture;
         imageCheck="picture"
       }
-	}
+
        postLink = postResponse.link;
        postLinkName = postResponse.name;
        postPermaLink = postResponse.permalink_url;
 
-       postDate= new Date(Date.parse(postResponse.created_time.split("T")[0]));
-	   postDate.setDate(postDate.getDate() + 1);
+       postDate= new Date(Date.parse(postResponse.created_time));
        postDay = postDate.getDate();
        postDayofWeek=dayOfWeekAsString(postDate.getDay());
        postMonth=monthAsString(postDate.getMonth());
