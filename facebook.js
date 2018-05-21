@@ -9,7 +9,7 @@ window.fbAsyncInit = function() {
 
 
    FB.init({
-     appId      : '1744135619181438',//add your app ID
+     appId      : '',//add your app ID
      xfbml      : true,
      version    : 'v2.7'
    });
@@ -18,7 +18,7 @@ window.fbAsyncInit = function() {
  function getFeed (callback) {
  FB.api(
          '13803164549/feed',//or use your feed ID
-         {access_token: '1744135619181438|e7e73450c4523ef48517bb93ede83c2e'},//add your access token
+         {access_token: ''},//add your access token
          function(feedResponse) {
            if (callback) {
              callback(feedResponse);
@@ -30,7 +30,7 @@ window.fbAsyncInit = function() {
  function getPost (postID, callback) {
  FB.api(
          postID,
-         {access_token: '1744135619181438|e7e73450c4523ef48517bb93ede83c2e',//add your access token
+         {access_token: '',//add your access token
          fields: 'attachments,full_picture,picture,message,story,description,name,link,permalink_url,created_time'
          },
          function(postResponse) {
