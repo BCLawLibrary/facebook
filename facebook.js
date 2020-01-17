@@ -92,7 +92,7 @@ getFeed(function (feedResponse) {
          postImage=postResponse.attachments.data[0].subattachments.data[0].media.image.src;
          imageCheck="attachment"
       }
-	  
+
       else {
         postImage = postResponse.full_picture;
         imageCheck="picture"
@@ -114,7 +114,6 @@ getFeed(function (feedResponse) {
 
        postMessage=(postResponse.message || postResponse.description || postResponse.story );
        postHeadCheck='noPostHead';
-
        currentPostID=postResponse.id;
        var imgDiv = $('<div/>')
          .addClass('facebook-image')
